@@ -46,11 +46,12 @@ def main():
     while True:
         answer = input("answer ? : ")
         answer = answer.lower()
+        
+        if answer in ["close","exit","stop"]:
+            break
+            
         if answer not in ["r","b","g","y"]:
             continue
-
-        elif answer in ["close","exit","stop"]:
-            break
 
         else:
             for i in range(len(bots)):
